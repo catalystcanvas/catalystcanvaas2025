@@ -1,0 +1,186 @@
+/* Section styling */
+.section {
+  padding: 4rem 1.5rem;
+  background-color: white;
+  color: #2d2d2d;
+  font-family: 'Manrope', sans-serif;
+  margin-top: 5rem;
+}
+
+/* Grid container - always column layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* Sidebar style */
+.sidebar {
+  background-color: #f5f5f5;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+  margin-top: 3rem;
+}
+
+/* Optional: Tweak padding/font-size for larger screens */
+@media (min-width: 768px) {
+  .section {
+    padding: 5rem 3rem;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .paragraph {
+    font-size: 1.125rem;
+  }
+}
+
+/* Heading styles */
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #1d4ed8;
+}
+
+/* Subheading styles */
+.subheading {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1d4ed8;
+  margin-bottom: 1.25rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Paragraph styles */
+.paragraph {
+  margin-bottom: 1.5rem;
+  line-height: 1.75;
+  color: #4a4a4a;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+/* Highlighted keywords */
+.paragraph strong {
+  color: #1d4ed8;
+  background-color: rgba(29, 78, 216, 0.1);
+  padding: 0.2rem 0.3rem;
+  border-radius: 4px;
+}
+
+/* Sidebar title */
+.sidebarTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  color: #333;
+}
+
+/* Label styles in sidebar */
+.label {
+  color: #6b7280;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Value styles in sidebar */
+.value {
+  font-weight: 600;
+  color: #2d2d2d;
+  font-size: 1.125rem;
+}
+
+/* Social icons styling */
+.socials {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.socials a {
+  font-size: 1.5rem;
+  transition: 0.3s ease;
+}
+
+.socials a:hover {
+  opacity: 0.8;
+  transform: translateY(-5px);
+}
+
+/* Callout box for important text */
+.callout {
+  background-color: #e0f7fa;
+  padding: 1rem;
+  border-left: 4px solid #1d4ed8;
+  font-style: italic;
+  margin: 1.5rem 0;
+}
+
+
+
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* First image spans all 3 columns */
+.item1 {
+  grid-column: 1 / 4;
+}
+
+/* Remaining images each go into one column */
+.item2 {
+  grid-column: 1 / 2;
+}
+.item3 {
+  grid-column: 2 / 3;
+}
+.item4 {
+  grid-column: 3 / 4;
+}
+
+/* Image styling */
+.imageGrid img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  border: 2px solid #ccc; /* 👈 Light gray border */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for contrast */
+}
+
+
+/* Responsive for tablets (same layout) */
+@media (max-width: 1024px) {
+  .imageGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Responsive for mobile: stack all images */
+@media (max-width: 768px) {
+  .imageGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .item1,
+  .item2,
+  .item3,
+  .item4 {
+    grid-column: auto;
+  }
+  
+}

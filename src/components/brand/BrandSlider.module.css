@@ -1,0 +1,47 @@
+.sliderWrapper {
+  overflow: hidden;
+  width: 100%;
+  background-color: #fff;
+  padding: 40px 0;
+  position: relative;
+}
+
+.sliderTrack {
+  display: flex;
+  width: max-content;
+  animation: scroll 10s linear infinite;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  box-sizing: border-box;
+  flex: 0 0 auto;
+}
+
+.logo img {
+  max-height: 100%;
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+
+.logo:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-40%);
+  }
+}
