@@ -73,7 +73,7 @@ const HeroService = () => {
             {banner_data.map((item, i) =>
               <div key={i} className="cs_card cs_style_1 anim_div_ShowDowns">
                 <div className="cs_card_left">
-                  <div className="cs_card_number cs_primary_font" style={{ backgroundImage: `url('/assets/img/hero_img_1.jpg')` }}>
+                  <div className="cs_card_number cs_primary_font" style={{ backgroundImage: `url('/assets/img/hero_img_.jpg')` }}>
                     0{i + 1}
                   </div>
                 </div>

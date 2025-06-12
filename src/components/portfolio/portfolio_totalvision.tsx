@@ -5,10 +5,42 @@ export default function TotalVisionShowcase() {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <div style={{ gridColumn: 'span 2' }}>
-          <h2 className={styles.heading}>Project Spotlight: Total Vision Services</h2>
-          <h3 className={styles.subheading}>Streamlined Online Experience for Vision Benefit Plans</h3>
 
+        {/* Headings */}
+        <h2 className={styles.heading}>Project Spotlight: Total Vision Services</h2>
+        <h3 className={styles.subheading}>Streamlined Online Experience for Vision Benefit Plans</h3>
+
+        {/* Sidebar */}
+        <aside className={styles.sidebar}>
+          <h4 className={styles.sidebarTitle}>Total Vision Services</h4>
+          <div className={styles.paragraph}>
+            <span className={styles.label}>Category</span><br />
+            <span className={styles.value}>Healthcare / Webflow Dev</span>
+          </div>
+          <div className={styles.paragraph}>
+            <span className={styles.label}>Technology</span><br />
+            <span className={styles.value}>Webflow</span>
+          </div>
+        </aside>
+
+        {/* Image Grid */}
+        <div className={styles.imageGrid}>
+          <div className={styles.item1}>
+            <img src="/assets/img/totalvision_home.png" alt="Total Vision homepage" />
+          </div>
+          <div className={styles.item2}>
+            <img src="/assets/img/totalvision1.png" alt="Plan comparison table" />
+          </div>
+          <div className={styles.item3}>
+            <img src="/assets/img/totalvision2.png" alt="Provider locator search" />
+          </div>
+          <div className={styles.item4}>
+            <img src="/assets/img/totalvision3.png" alt="Contact form integration" />
+          </div>
+        </div>
+
+        {/* Main Content Paragraphs */}
+        <div>
           <p className={`${styles.paragraph} ${styles.callout}`}>
             Total Vision Services provides discount vision plans and non‑insured healthcare benefits through a network of over 12,000 providers — serving individuals, families, and businesses since 1988.
           </p>
@@ -30,33 +62,6 @@ export default function TotalVisionShowcase() {
           </p>
         </div>
 
-        <aside className={styles.sidebar}>
-          <h4 className={styles.sidebarTitle}>Project Information</h4>
-          <div className={styles.paragraph}>
-            <span className={styles.label}>Category</span><br />
-            <span className={styles.value}>Healthcare / Webflow Dev</span>
-          </div>
-          <div className={styles.paragraph}>
-            <span className={styles.label}>Technology</span><br />
-            <span className={styles.value}>Webflow, JavaScript, Provider API, InstaMed</span>
-          </div>
-        
-        </aside>
-      </div>
-
-      <div className={styles.imageGrid}>
-        <div className={styles.item1}>
-          <img src="/assets/img/totalvision_home.png" alt="Total Vision homepage" />
-        </div>
-        <div className={styles.item2}>
-          <img src="/assets/img/totalvision1.png" alt="Plan comparison table" />
-        </div>
-        <div className={styles.item3}>
-          <img src="/assets/img/totalvision2.png" alt="Provider locator search" />
-        </div>
-        <div className={styles.item4}>
-          <img src="/assets/img/totalvision3.png" alt="Contact form integration" />
-        </div>
       </div>
     </section>
   );

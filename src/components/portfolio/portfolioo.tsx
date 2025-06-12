@@ -59,30 +59,15 @@ const projectsData = [
 ];
 
 const PortfolioProjects = () => {
-  const [visibleCount, setVisibleCount] = useState(3);
-
-  const handleLoadMore = () => {
-    setVisibleCount(projectsData.length);
-  };
-
   return (
     <section className={styles.portfolioSection}>
-      {/* <h2 className={styles.heading}>Some Recent Projects We Successfully Done</h2> */}
       <div className={styles.projectsGrid}>
-        {projectsData.slice(0, visibleCount).map((project, index) => (
+        {projectsData.map((project, index) => (
           <Link href={project.link} key={index} className={styles.projectCard}>
             <img src={project.image} alt={project.title} className={styles.projectImage} />
           </Link>
         ))}
       </div>
-      {visibleCount < projectsData.length && (
-        <div className={styles.loadMoreWrapper}>
-          <button className={styles.loadMoreBtn} onClick={handleLoadMore}>
-            Load More
-          </button>
-        </div>
-      )}
-      
     </section>
   );
 };

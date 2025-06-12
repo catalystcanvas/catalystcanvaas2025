@@ -5,10 +5,42 @@ export default function ClearbotShowcase() {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <div style={{ gridColumn: 'span 2' }}>
-          <h2 className={styles.heading}>Project Spotlight: Clearbot</h2>
-          <h3 className={styles.subheading}>AI-Powered Autonomous Marine Cleanup</h3>
 
+        {/* Headings */}
+        <h2 className={styles.heading}>Project Spotlight: Clearbot</h2>
+        <h3 className={styles.subheading}>AI-Powered Autonomous Marine Cleanup</h3>
+
+        {/* Sidebar */}
+        <aside className={styles.sidebar}>
+          <h4 className={styles.sidebarTitle}>Clearbot</h4>
+          <div className={styles.paragraph}>
+            <span className={styles.label}>Category</span><br />
+            <span className={styles.value}>Environmental Robotics / Webflow Dev</span>
+          </div>
+          <div className={styles.paragraph}>
+            <span className={styles.label}>Technology</span><br />
+            <span className={styles.value}>Webflow, Vue.js, Chart.js, WebSockets</span>
+          </div>
+        </aside>
+
+        {/* Image Grid */}
+        <div className={styles.imageGrid}>
+          <div className={styles.item1}>
+            <img src="/assets/img/clearbot_home.png" alt="Clearbot fleet" />
+          </div>
+          <div className={styles.item2}>
+            <img src="/assets/img/clearbot1.png" alt="AI data dashboard" />
+          </div>
+          <div className={styles.item3}>
+            <img src="/assets/img/clearbot2.png" alt="Clearbot Class 2 vessel" />
+          </div>
+          {/* <div className={styles.item4}>
+            <img src="/assets/img/clearbot_alligator.jpg" alt="Clearbot Alligator for hyacinth removal" />
+          </div> */}
+        </div>
+
+        {/* Main Content */}
+        <div>
           <p className={`${styles.paragraph} ${styles.callout}`}>
             Clearbot is a fleet of electric, autonomous boats engineered to collect trash, hyacinth, and marine debris from rivers, harbours, and ports — all while generating real-time AI-driven data for environmental stakeholders.
           </p>
@@ -30,33 +62,6 @@ export default function ClearbotShowcase() {
           </p>
         </div>
 
-        <aside className={styles.sidebar}>
-          <h4 className={styles.sidebarTitle}>Project Information</h4>
-          <div className={styles.paragraph}>
-            <span className={styles.label}>Category</span><br />
-            <span className={styles.value}>Environmental Robotics / Webflow Dev</span>
-          </div>
-          <div className={styles.paragraph}>
-            <span className={styles.label}>Technology</span><br />
-            <span className={styles.value}>Webflow, Vue.js, Chart.js, WebSockets</span>
-          </div>
-
-        </aside>
-      </div>
-
-      <div className={styles.imageGrid}>
-        <div className={styles.item1}>
-          <img src="/assets/img/clearbot_home.png" alt="Clearbot fleet" />
-        </div>
-        <div className={styles.item2}>
-          <img src="/assets/img/clearbot1.png" alt="AI data dashboard" />
-        </div>
-        <div className={styles.item3}>
-          <img src="/assets/img/clearbot2.png" alt="Clearbot Class 2 vessel" />
-        </div>
-        {/* <div className={styles.item4}>
-          <img src="/assets/img/clearbot_alligator.jpg" alt="Clearbot Alligator for hyacinth removal" />
-        </div> */}
       </div>
     </section>
   );
