@@ -17,7 +17,7 @@ interface DataType {
 }
 
 const footer_data: DataType = {
-  email: `info@catalystcanvas.co`,
+  email: `info@catalystcanvas.com`,
   phone: `+91 7665127830`,
   location: `Bhamasha Techno Hub, Malviya Nagar, Jaipur, Rajasthan 302018`,
   footer_info: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development.`,
