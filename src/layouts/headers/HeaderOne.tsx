@@ -352,8 +352,8 @@ const HeaderOne = () => {
 									<hr className="mt-2 me-5 mb-2" />
 									<div className="cs_main_header_right">
 										<div className="cs_header_contact_info">
-											<a href="mailto:info@catalystcanvas.co" style={{ fontSize: '40px', whiteSpace: 'nowrap' }}>
-												info@catalystcanvas.co
+											<a href="mailto:info@catalystcanvas.com" style={{ fontSize: '40px', whiteSpace: 'nowrap' }}>
+												info@catalystcanvas.com
 											</a>
 										</div>
 									</div>
